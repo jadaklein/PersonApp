@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m7R-Wl-TSK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Person-->
+        <scene sceneID="2Nn-tV-tgL">
+            <objects>
+                <viewController id="Cuo-9c-pe8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ars-B4-st6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keith Haring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lW4-2I-BO6">
+                                <rect key="frame" x="20" y="89" width="374" height="47"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 1" translatesAutoresizingMaskIntoConstraints="NO" id="22U-Ok-x0z">
+                                <rect key="frame" x="50" y="181" width="315" height="337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="1dh-QM-am4"/>
+                                    <constraint firstAttribute="height" constant="337" id="1lR-c9-Ngp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wdD-Is-qse"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="22U-Ok-x0z" firstAttribute="top" secondItem="lW4-2I-BO6" secondAttribute="bottom" constant="45" id="4Em-tO-VbY"/>
+                            <constraint firstItem="wdD-Is-qse" firstAttribute="trailing" secondItem="lW4-2I-BO6" secondAttribute="trailing" constant="20" id="8At-Fu-0iP"/>
+                            <constraint firstItem="wdD-Is-qse" firstAttribute="trailing" secondItem="22U-Ok-x0z" secondAttribute="trailing" constant="49" id="BjO-ly-gIu"/>
+                            <constraint firstItem="lW4-2I-BO6" firstAttribute="top" secondItem="wdD-Is-qse" secondAttribute="top" constant="45" id="gCB-DT-uw0"/>
+                            <constraint firstItem="22U-Ok-x0z" firstAttribute="leading" secondItem="wdD-Is-qse" secondAttribute="leading" constant="50" id="mbu-b1-ch1"/>
+                            <constraint firstItem="lW4-2I-BO6" firstAttribute="leading" secondItem="wdD-Is-qse" secondAttribute="leading" constant="20" id="vNL-Of-nGC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Person" image="person_icon" selectedImage="person_icon" id="YGg-rr-0Yy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTz-jV-gzW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="87.723214285714278"/>
+        </scene>
+        <!--Bio-->
+        <scene sceneID="MJ9-Sq-YJO">
+            <objects>
+                <viewController id="kxo-O2-3cw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7x-00-cTj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biography" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1w-Yh-gx8">
+                                <rect key="frame" x="0.0" y="75" width="414" height="41"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpv-kT-qkn">
+                                <rect key="frame" x="20" y="144" width="374" height="228.5"/>
+                                <string key="text">Keith Allen Haring (May 4, 1958 – February 16, 1990) was an American artist whose pop art and graffiti-like work grew out of the New York City street culture of the 1980s. Much of his work includes social activism achieved by using images to advocate for safe sex and AIDS awareness.</string>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vFl-T4-FAr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vFl-T4-FAr" firstAttribute="trailing" secondItem="mpv-kT-qkn" secondAttribute="trailing" constant="20" id="Ial-bJ-pC3"/>
+                            <constraint firstItem="T1w-Yh-gx8" firstAttribute="trailing" secondItem="vFl-T4-FAr" secondAttribute="trailing" id="jzX-vv-IBo"/>
+                            <constraint firstItem="T1w-Yh-gx8" firstAttribute="leading" secondItem="vFl-T4-FAr" secondAttribute="leading" id="nyj-PG-YLr"/>
+                            <constraint firstItem="mpv-kT-qkn" firstAttribute="leading" secondItem="vFl-T4-FAr" secondAttribute="leading" constant="20" id="pIv-2P-Tzf"/>
+                            <constraint firstItem="T1w-Yh-gx8" firstAttribute="top" secondItem="vFl-T4-FAr" secondAttribute="top" constant="31" id="zIz-n1-svh"/>
+                            <constraint firstItem="mpv-kT-qkn" firstAttribute="top" secondItem="T1w-Yh-gx8" secondAttribute="bottom" constant="28" id="zbj-Oh-Nlf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bio" image="read_icon" selectedImage="read_icon" id="SF2-Se-tGk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbI-yE-JVv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223.18840579710147" y="766.74107142857144"/>
+        </scene>
+        <!--Images-->
+        <scene sceneID="I8g-pX-JWW">
+            <objects>
+                <viewController id="T1Y-Yt-tUe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mBK-OH-Hvh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VeA-jZ-cdm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xlx-Wa-QpK">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 8" translatesAutoresizingMaskIntoConstraints="NO" id="MAk-MN-iOR">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="138"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 6" translatesAutoresizingMaskIntoConstraints="NO" id="UQb-73-vx4">
+                                                <rect key="frame" x="217" y="0.0" width="197" height="138"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="acd-Jl-0X5">
+                                        <rect key="frame" x="0.0" y="158" width="414" height="137.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 3" translatesAutoresizingMaskIntoConstraints="NO" id="JeI-uh-F45">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="137.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 5" translatesAutoresizingMaskIntoConstraints="NO" id="9FN-fa-dID">
+                                                <rect key="frame" x="217" y="0.0" width="197" height="137.5"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xO1-ru-Rso">
+                                        <rect key="frame" x="0.0" y="315.5" width="414" height="138"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 9" translatesAutoresizingMaskIntoConstraints="NO" id="oI9-V0-w00">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="138"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 2" translatesAutoresizingMaskIntoConstraints="NO" id="iVb-zL-3Kc">
+                                                <rect key="frame" x="217" y="0.0" width="197" height="138"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-5z-7Hn">
+                                        <rect key="frame" x="0.0" y="473.5" width="414" height="137.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 7" translatesAutoresizingMaskIntoConstraints="NO" id="euJ-yG-Te1">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="137.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 10" translatesAutoresizingMaskIntoConstraints="NO" id="nEq-Fo-SEm">
+                                                <rect key="frame" x="217" y="0.0" width="197" height="137.5"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IGf-d7-9c3">
+                                        <rect key="frame" x="0.0" y="631" width="414" height="138"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 1" translatesAutoresizingMaskIntoConstraints="NO" id="Ab3-PX-G5j">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="138"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haring 4" translatesAutoresizingMaskIntoConstraints="NO" id="t73-cg-YbS">
+                                                <rect key="frame" x="217" y="0.0" width="197" height="138"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tYN-J0-jwm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VeA-jZ-cdm" firstAttribute="trailing" secondItem="tYN-J0-jwm" secondAttribute="trailing" id="01N-j1-jZF"/>
+                            <constraint firstItem="VeA-jZ-cdm" firstAttribute="top" secondItem="tYN-J0-jwm" secondAttribute="top" id="HzG-Co-4aT"/>
+                            <constraint firstItem="VeA-jZ-cdm" firstAttribute="leading" secondItem="tYN-J0-jwm" secondAttribute="leading" id="OXD-Xz-N5X"/>
+                            <constraint firstItem="VeA-jZ-cdm" firstAttribute="bottom" secondItem="tYN-J0-jwm" secondAttribute="bottom" id="ObL-pZ-u4Y"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Images" image="photos_icon" selectedImage="photos_icon" id="6cD-Ka-JN2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6A-Jw-rX0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="768.75"/>
+        </scene>
+        <!--Birthplace-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hello_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6iS-GC-WHu">
+                                <rect key="frame" x="0.0" y="52" width="414" height="697"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LBm-bK-2IP">
+                                <rect key="frame" x="94" y="757" width="226" height="32"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeMapType:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fss-JY-Bs2"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LBm-bK-2IP" secondAttribute="bottom" constant="25" id="Mba-F7-CDG"/>
+                            <constraint firstItem="6iS-GC-WHu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nom-Xj-orV"/>
+                            <constraint firstItem="LBm-bK-2IP" firstAttribute="top" secondItem="6iS-GC-WHu" secondAttribute="bottom" constant="8" symbolic="YES" id="P5i-G1-QSc"/>
+                            <constraint firstItem="6iS-GC-WHu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Vl7-ym-vg1"/>
+                            <constraint firstItem="LBm-bK-2IP" firstAttribute="top" secondItem="6iS-GC-WHu" secondAttribute="bottom" constant="8" symbolic="YES" id="cPD-Wy-pzc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBm-bK-2IP" secondAttribute="trailing" constant="94" id="d0W-iT-pNC"/>
+                            <constraint firstItem="6iS-GC-WHu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eOV-J4-sFo"/>
+                            <constraint firstItem="LBm-bK-2IP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="gpH-J2-xqD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Birthplace" image="map_icon" selectedImage="map_icon" id="Ann-Dt-SnC"/>
+                    <connections>
+                        <outlet property="mapView" destination="6iS-GC-WHu" id="xJ1-yc-mb3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="77.678571428571431"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jE5-YX-vrn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="m7R-Wl-TSK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jy0-1U-Zlh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Cuo-9c-pe8" kind="relationship" relationship="viewControllers" id="Iba-nf-kpp"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="k4A-TP-pDU"/>
+                        <segue destination="kxo-O2-3cw" kind="relationship" relationship="viewControllers" id="BCb-8r-E6g"/>
+                        <segue destination="T1Y-Yt-tUe" kind="relationship" relationship="viewControllers" id="rml-XS-v8U"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8R-jT-NB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-689.85507246376812" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="haring 1" width="204" height="247"/>
+        <image name="haring 10" width="318" height="159"/>
+        <image name="haring 2" width="225" height="225"/>
+        <image name="haring 3" width="299" height="168"/>
+        <image name="haring 4" width="225" height="225"/>
+        <image name="haring 5" width="276" height="183"/>
+        <image name="haring 6" width="445" height="650"/>
+        <image name="haring 7" width="290" height="174"/>
+        <image name="haring 8" width="203" height="248"/>
+        <image name="haring 9" width="253" height="199"/>
+        <image name="map_icon" width="28" height="28"/>
+        <image name="person_icon" width="28" height="28"/>
+        <image name="photos_icon" width="28" height="28"/>
+        <image name="read_icon" width="28" height="28"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
